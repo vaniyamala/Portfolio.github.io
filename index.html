@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>javaproject</title>
+    <link rel="icon" href="portflio.png">
+    <style>
+        table.bordered-image{
+            border: 2px solid black;
+            margin: 230px;
+        }
+        
+        #zero{
+            border: 2px solid steelblue;
+            background-color:steelblue;
+            padding-top:0px;
+            margin-top:-15px;
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        #fist.moving-text {
+            position: absolute;
+            top: 230px;
+            background-color: none;
+            left: -100%; 
+            height: 30px;
+            font-size: 30px;
+            margin-top: -100px;
+            text-transform: inherit;
+            white-space: nowrap;
+            animation: moveRight 10s linear infinite, colorChange 5s infinite alternate;
+        }
+       
+        @keyframes moveRight {
+            from {
+                left: -100%;
+            }
+            to {
+                left: 100%;
+            }
+        }
+        @keyframes colorChange {
+            0% {
+                color: red;
+            }
+            25% {
+                color: blue;
+            }
+            50% {
+                color: green;
+            }
+            75% {
+                color: yellow;
+            }
+            100% {
+                color: purple;
+            }
+        }
+        #sec.colour{
+            padding-top: 70px;
+            font-size: 30px;
+
+        }
+    </style>
+</head>
+<body bgcolor="skyblue">
+    <div id="zero" class="table">
+        <table align="center" cellspacing="10">
+            <tr>
+                <th><img src="vaniimag.png" alt="Imag not avalible" class="bordered-image" height="100px" width="100px"></th>             
+                <th><a href="aboutme.html">About Me</a></th>
+                <th><a href="education.html">Education Details</a></th>
+                <th><a href="projects.html">About Projects</a></th>
+                <th><a href="Certificates.html">Certificatations</a> </th>
+                <th> <a href="contactform.html">Contact me</a></th>
+            </tr>
+        </table>  
+    </div>
+      <br><br><br><br><br><br>
+      <div id="fist" class="moving-text">
+        <span>H</span>
+        <span>i</span>
+        <span>!</span>
+        <span>&nbsp;</span>
+        <span>W</span>
+        <span>e</span>
+        <span>l</span>         
+        <span>c</span>
+        <span>o</span>
+        <span>m</span>
+        <span>e</span>
+        <span>&nbsp;</span>
+        <span>t</span>
+        <span>o</span>
+        <span>&nbsp;</span>
+        <span>M</span>
+        <span>y</span>
+        <span>&nbsp;</span>
+        <span>P</span>
+        <span>o</span>
+        <span>r</span>
+        <span>t</span>
+        <span>f</span>
+        <span>o</span>
+        <span>l</span>
+        <span>i</span>
+        <span>o</span>
+        <span>&#128591;</span>
+    </div>
+    <div id="sec" class="colour">
+        <Center>
+            <a href="aboutme.html">
+            <span style="color: brown; font-size: 60px;">G</span>
+            <span style="color: rgb(44, 199, 24);">E</span>
+            <span style="color: rgb(28, 46, 209);">T</span>
+            <span style="color: rgb(207, 217, 20);">&#x1F449; </span>
+            <span style="color: #1a6c36;">S</span>
+            <span style="color: black;">T</span>
+            <span style="color: greenyellow;">A</span>
+            <span style="color: red;">R</span>
+            <span style="color: blueviolet;">T</span>
+            <span style="color: pink;">E</span>
+            <span style="color: gray;">D</span> 
+            </a>   
+        </Center>
+    </div>
+       
+</body>
+</html>
