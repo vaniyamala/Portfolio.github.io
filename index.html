@@ -1,128 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>javaproject</title>
+    <title>portfilo</title>
     <link rel="icon" href="portflio.png">
-    <style>
-        table.bordered-image{
-            border: 2px solid black;
-            margin: 230px;
+    <Style>
+        .navbar{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9;
+        background: #1a1a1a;
+        text-decoration: none;
         }
-        
-        #zero{
-            border: 2px solid steelblue;
-            background-color:steelblue;
-            padding-top:0px;
-            margin-top:-15px;
-            margin-left: -15px;
-            margin-right: -15px;
-        }
-        #fist.moving-text {
-            position: absolute;
-            top: 230px;
-            background-color: none;
-            left: -100%; 
-            height: 30px;
-            font-size: 30px;
-            margin-top: -100px;
-            text-transform: inherit;
-            white-space: nowrap;
-            animation: moveRight 10s linear infinite, colorChange 5s infinite alternate;
-        }
-       
-        @keyframes moveRight {
-            from {
-                left: -100%;
-            }
-            to {
-                left: 100%;
-            }
-        }
-        @keyframes colorChange {
-            0% {
-                color: red;
-            }
-            25% {
-                color: blue;
-            }
-            50% {
-                color: green;
-            }
-            75% {
-                color: yellow;
-            }
-            100% {
-                color: purple;
-            }
-        }
-        #sec.colour{
-            padding-top: 70px;
-            font-size: 30px;
+    h2{
+         
+        display: flex;
+        color:#FFFFFF;
+        opacity: 0.7;
+        text-decoration: none;
+        text-transform: capitalize;
+        padding: 10px 30px;
+        margin: 0 20px;
+        line-height: 80px;
+        transition: .5s;
+        font-size: 20px;
+    }
+    img{
+        width: 300px;
+        height: 300px;
+        border: 1px solid #ccc;
+        border-radius: 160px;
+        box-shadow: 2px 2px 5px rgba(1, 1, 1, 1);
+        margin-top: 200px;
+        margin-left: 100px;
+        padding: 10px;
+        transition: transform 0.3s ease-in-out;
+        transform: scale(1.1);
+    }
+    body{
+        width: 100%;
+        max-width: 1400px;
+        display: block;
+        margin: auto;
+        min-height: 100vh;
+        background: #f0e7e7;
+        font-family: sans-serif;
+    }
+    h1{
+        color: rgb(31, 30, 30);
+        font-size: 70px;
+        text-transform: capitalize;
+        font-weight: 300px;
+        margin-top: -300px;
+        margin-left: 500px;
+    }
 
+    #two{
+        color: black;
+        font-size: 50px;
+        margin-top: -30px;
+        margin-left: 550px;
+        font-weight: bold;
+        
+    }
+   
+    #one{
+        color:#31d887;
+        font-size: 50px;
+        font-weight: 300px;
+        margin-top: -30px;
+        margin-left: 500px;
+        font-weight: bold;
+        animation: fade-in 2s ease-in-out infinite alternate;
+        animation-timing-function: ease-in-out;
+        animation-direction: reverse;
+
+    }
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        color: #31d887;
         }
-    </style>
+        50% {
+            opacity: 0.5;
+        color: rgb(159, 94, 239);
+        }
+        100% {
+            opacity: 1;
+            color: blueviolet;
+        }
+    }
+    p{
+        margin-top: -350px;
+        text-align: center;
+        font-size: medium;
+        font-family:inherit;
+        color:brown;
+    }
+     
+    </Style>
+
 </head>
-<body bgcolor="skyblue">
-    <div id="zero" class="table">
-        <table align="center" cellspacing="10">
-            <tr>
-                <th><img src="vaniimag.png" alt="Imag not avalible" class="bordered-image" height="100px" width="100px"></th>
-                <th><a href="aboutme.html">About Me</a></th>
-                <th><a href="education.html">Education Details</a></th>
-                <th><a href="projects.html">About Projects</a></th>
-                <th><a href="Certificates.html">Certificatations</a> </th>
-                <th> <a href="contactform.html">Contact me</a></th>
-            </tr>
-        </table>  
+<body>
+    <div class="navbar">
+        <a href="index.html"> <h2>Home</h2></a>
+       <a href="aboutme.html"><h2>AboutMe</h2></a>
+       <a href="education.html"><h2>Educational details</h2></a>
+        <a href="projects.html"><h2>projects</h2></a>
+        <a href="contactform.html"><h2>Contacts</h2></a>
+        
+        
     </div>
-      <br><br><br><br><br><br>
-      <div id="fist" class="moving-text">
-        <span>H</span>
-        <span>i</span>
-        <span>!</span>
-        <span>&nbsp;</span>
-        <span>W</span>
-        <span>e</span>
-        <span>l</span>         
-        <span>c</span>
-        <span>o</span>
-        <span>m</span>
-        <span>e</span>
-        <span>&nbsp;</span>
-        <span>t</span>
-        <span>o</span>
-        <span>&nbsp;</span>
-        <span>M</span>
-        <span>y</span>
-        <span>&nbsp;</span>
-        <span>P</span>
-        <span>o</span>
-        <span>r</span>
-        <span>t</span>
-        <span>f</span>
-        <span>o</span>
-        <span>l</span>
-        <span>i</span>
-        <span>o</span>
-        <span>&#128591;</span>
+   
+    <img src="vb.jpg" alt="">
+    <h1>Hi ! I am  </h1>
+    <h2 id="two">Vani Yamala</h2>
+    <h2 id="one">Full Stack Java Developer</h2>
+     
+
+    <div>
+        <p><b>Explore my  profile to uncover the exceptional skills and achievements that define my career.</b></p>
     </div>
-    <div id="sec" class="colour">
-        <Center>
-            <a href="aboutme.html">
-            <span style="color: brown; font-size: 60px;">G</span>
-            <span style="color: rgb(44, 199, 24);">E</span>
-            <span style="color: rgb(28, 46, 209);">T</span>
-            <span style="color: rgb(207, 217, 20);">&#x1F449; </span>
-            <span style="color: #1a6c36;">S</span>
-            <span style="color: black;">T</span>
-            <span style="color: greenyellow;">A</span>
-            <span style="color: red;">R</span>
-            <span style="color: blueviolet;">T</span>
-            <span style="color: pink;">E</span>
-            <span style="color: gray;">D</span> 
-            </a>   
-        </Center>
-    </div>
-       
 </body>
 </html>
