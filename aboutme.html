@@ -1,82 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title> About Me</title>
-    <style> 
-        h1{
-            text-align:center ;
-            color:blue;
+    <title>AboutMe</title>
+    <style>
+        body{
+            background-color:rgb(27, 206, 242);
+            width: 100%;  
         }
-        h2{
-            color: #52d541;
+        .about{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 30% 65%;
+            grid-gap: 40px;
         }
-        #one{
-            color: rgb(75, 94, 233);
+        .about-img-container{
+            position: relative;
+        }
+        .about-img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        p{
+            color:black;
             font-family: cursive;
+            opacity: 0.6;
+            font-size: 20px;
+            line-height: 40px;
         }
-        #two{
-            color: rgb(83, 167, 167);
+        marquee{
+            color:rgb(22, 34, 248)
         }
-        #three{
-            color: blueviolet;
-            font-family:sans-serif;
+        button{
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            color: #fff;
+            border: none;
+            font-size: 16px;
+            text-transform: capitalize;
+            cursor: pointer;
+            transition: .5s;
+            background: rgba(0, 0, 0, 0.5);
         }
-        #four{
-            color: rgb(240, 35, 219);
+        h1.heading{
+            text-align: center;
+            font-size: 60px;
+            color: #803f3f;
+            text-transform: capitalize;
+            font-weight: 300;
+            margin-bottom: 100px;
         }
-        #five{
-            color: #195050;
+        
+        h2.one{
+            position: absolute;
+            top: 80px;  
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            border-radius: 50%;
+            border: 10px solid;
+            margin-top: 640px;
+            margin-left: 3%;
+            background: conic-gradient(rgb(106, 248, 118) 0% 98%,red 98% 100% );
         }
-        #six{
-            color: rgb(38, 140, 208);
+         
+        h2.two{
+            position: absolute;
+            top: 80px;  
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            border-radius: 50%;
+            border: 10px solid;
+            margin-top: 640px;
+            margin-left: 30%;
+            background: conic-gradient(rgb(71, 181, 237) 0% 98%,red 98% 100% );
         }
-        #seven{
-            border: 2px solid rgb(19, 33, 231);
-            background-color: azure;
+        h2.three{
+            position: absolute;
+            top: 80px;  
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            border-radius: 50%;
+            border: 10px solid;
+            margin-top: 640px;
+            margin-left: 60%;
+            background: conic-gradient(rgb(233, 178, 88) 0% 85%,red 85% 100% );
         }
+        h2.four{
+            position: absolute;
+            top: 80px;  
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            border-radius: 50%;
+            border: 10px solid;
+            margin-top: 640px;
+            margin-left: 90%;
+            background: conic-gradient(rgb(232, 115, 183) 0% 90%,red 90% 100% );
+        }
+        h2.five{
+            position: absolute;
+            top: 80px;  
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            border-radius: 50%;
+            border: 10px solid;
+            margin-top: 850px;
+            margin-left: 4%;
+            background: conic-gradient(rgb(120, 71, 234) 0% 50%,red 50% 100% );
+        }
+        h2.six{
+            position: absolute;
+            top: 80px;  
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            border-radius: 50%;
+            border: 10px solid;
+            margin-top: 850px;
+            margin-left: 30%;
+            background: conic-gradient(rgb(233, 142, 24) 0% 98%,red 98% 100% );
+        }
+        
+        h1.v{
+            color:blueviolet;
+            margin-top: -90px;
+
+        }
+        h1.va{
+            color:palevioletred;
+            margin-top: 450px;
+        }
+        li{
+            font-size: mediums;
+            font-weight: 400px;font-style: oblique;
+        }
+        h1.van{
+            color: #803f3f;
+        }
+        .h{
+            background-color: rgb(147, 140, 154);
+            color: rgb(104, 21, 207);
+            border: black solid;
+            border-radius: 2px;
+        }
+        .n{
+            background-color: aliceblue;
+            border: black solid;
+            margin-left: 45%;
+        }
+        
+         
+        
     </style>
 </head>
-<body bgcolor="pink">
-
-    <h1><i>Introduction to me </i></h1>
-    <h2><b>CAREER OBJECTIVE</b></h2>
-    <p id="one">Passionate and motivated Full Stack Web Developer eager to kick-start my career in a dynamic and
-        innovative environment.
-        </p>
-    <h2>Short Intro</h2>
-    <p id="two">My name is <b>Vani Yamala</b> .I recently completed my graducation from <u>VEMU INSTITUTE OF TECHNOLOGY</u> in the streem of Electronics And Communication
-    Communication.I done my Intermedite from SRI PADMAVATHI WOMEN'S JOUNIOR COLLEGE.I done my Schooling from S P V B High School.
-    I am good at C,Python,java,SQL,HTML5,CSS.I am a <mark> enthusiastic person</mark> to learn new things and <mark>self Learner </mark></p>
-    <h2>My Goals</h2>
-    <ul id="three"> 
-        <li>My short term goal is to get a job in a reputed company where i can build my career and improve my skills  and Knowledge.</li>
-        <li>My long-term goal is to improve myself and become a leader in my field. And learn new things that can benefit the organization too.</li>
-   </ul>
-   <h2>Hobbies</h2>
-   <ul id="four">
-    <li>Traveling</li>
-    <li>Gardining</li>
-    <li>Volunteer Work</li>
-    <li>Video editting</li>
-    <li>Cooking</li>
-    <li>Sports</li>
-   </ul>
-   <h2>Skill Set</h2>
-   <p>
-    <em> <b>
-        <pre id="five"><b>C  PYTHON  JAVA  HTML5  CSS  SQL</b></pre>
-    </b></em>
-    <ol id="six">
-        <li>Teamwork and collabrote</li>
-        <li>Leardeship</li>
-        <li>Critical Thinking</li>
-        <li>Adaptability</li>
-        <li> Self satisfied </li>
-        <li> Problem Solving</li>
-    </ol>
-   </p>
-   <a href="htmlproject1.html" id="seven">Back</a>
-   <center><a href="education.html">Next</a></center>
+<body>
+       <div class="about">
+            <div class="about-img-container">
+                <img src="vani.jpg" class="about-img" alt="">
+                <button><a href="Vani's Resume (7).pdf" download="Your_CV.pdf">Download CV </a></button>
+            </div>            
+                <p><marquee behavior="alternate" direction="">Take a closer look at my job profile to reveal the extraordinary dedication and passion I bring to my work</h1>
+                    </marquee>"It's a pleasure to introduce myself as Vani Yamala. I am a fresh graduate with a degree in Electronics and Communication Engineering from
+                     VEMU Institute Of Technology, Chittoor. I completed my intermediate education at S P W Junior College, Tirupathi, and my schooling at S P V B High School, 
+                     Mulakalacheruvu. I am proficient in C, Java, Python, HTML, SQL, and CSS.My hobbies include traveling, gardening, playing sports, and bike riding. My short-term 
+                     goal is to secure a job in a reputed company where I can kickstart my career and enhance my skills and knowledge. My long-term goal is to attain a prominent 
+                     position where I can further develop my career and contribute to the organization. I am an enthusiastic individual always eager to learn new things. I excel as
+                      both a team leader and a team player, and I am also a self-satisfied person."
+                </p>
+        </div>
+        <div>
+        <h1 class="heading">skills</h1>
+        <h1 CLASS="v">Technical Skills</h1>
+        <h2 class="one">98% <br>HTML</h2>
+        <h2 class="two">98% <br>CSS</h3>
+        <h2 class="three">85% <br>SQL</h2>
+        <h2 class="four">90% <br>JAVA</h2>
+        <h2 class="five">50%<br>Python</h2>
+        <h2 class="six">40% <br>C</h2>
+        </div>
+        <h1 class="va">Personal Skills</h1>
+        <ul>
+            <li>Leadership</li>
+            <li>Problem-solving </li>
+            <li>Adaptability</li>
+            <li class="l">Logical&Critical thinking</li>
+            <li class="l">Self-motivation</li>
+            <li class="l">Public speaking</li>
+        </ul>
+        <h1 style="color: rgb(18, 165, 87);text-align: center;">Achievements</h1>
+        <ul>
+            <li>Ladies Representative (08/2021 - 05/2023)</li>
+            <li>innovation club Coordinator (11/2021 - 05/2023)</li>
+            <li>I received the second prize for my paper presentation.</li>
+            <li>I received the first prize for kabaddi.</li>
+        </ul>
+        <h1 class="van">Internship</h1>
+        <ul>
+            <li><b style="color: blueviolet;">FPGA Design and Verification Intern</b>,<h3>TechFLUENT Solutions,</h3>08/2022 - 09/2022  </li><br>
+            <li><b style="color: blueviolet;">Java Full Stack Intern</b><h3> Tap Academy </h3> 05/2023 - Present<br></li>
+        </ul>
+        
+        <a href="index.html" class="h">HOME</a>
+        <a href="education.html" class="n">NEXT</a>
+         
+        
+         
+       
+         
     
 </body>
 </html>
