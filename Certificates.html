@@ -1,39 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>certificates</title>
+    
+    <title>Certificates</title>
     <style>
-        h1{
-            font-family: sans-serif;
-            color: rgb(85, 13, 153);
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3498db;
+            margin: 0;
+            padding: 0;
+            color: #222;
         }
-        img{
-            border: 1px solid black;
+        .container {
+            display: flex;
+            flex-direction: row-reverse; /* Start with image on the left */
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #000;
+            background-color: #fff;
         }
-        p{
-            color: rgb(96, 116, 5);
-            font-family: unset;
+        .container:nth-child(even) {
+            flex-direction: row; /* Alternate with image on the right */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            max-height: 250px;
+        }
+        p {
+            font-family: Arial, sans-serif;
+            color: #607405;
+            text-align: justify;
+            margin: 10px;
+            flex: 1;
+        }
+        a {
+            display: block;
+            width: 100px;
+            text-align: center;
+            margin: 20px auto;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #550D99;
+            border: 2px solid #550D99;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #472d7d;
+            border-color: #472d7d;
         }
     </style>
 </head>
-<body bgcolor="#2ECC71">
-    <p style="color: rgb(9, 28, 153);">I am more interested to learn new things and new technologies.</p>
-    <center><h1>Python certificate from codentra</h1></center>
-    <center><img src="codentra.jpg" alt="Image is not available" height="300px" align="center"></center>
-    <p>This Python certificate is awarded to successfully
-         completed a Python programming course. It serves as official recognition of my knowledge and proficiency in the Python programming language. Python certificates can be obtained from <b>codentra</b>, online learning platforms.</p>
-    <center><h1>Dron workshop</h1></center>
-    <center><img src="dron.jpg" alt="Image is not available"height="300px" width="400px"></center>
-    <p> A drone workshop certificate is awarded to completed a drone workshop.
-        This certificate serves as official recognition of my
-        knowledge and skills related to drone technology and operation.
-        Drone workshops are typically organized by Sri Vignan Technologies.</p>
-    <center><h1>FPGA DESIGN AND VERIFICATION</h1></center>
-    <center><img src="FPGA DESIGN AND VERIFICATION.jpg" alt="Image is not available" height="300px"></center>
-    <p>This certificate presents the details of my internship in the field of FPGA design and verification within the VLSI domain.
-        The internship was carried out at a prominent semiconductor company, where I was exposed to the complete lifecycle of FPGA-based projects.
-        It provides insights into the projects I worked on, the methodologies used, and the skills acquired during the internship.
-    </p>
+<body>
+    <p style="text-align: center; color: #091C99;">I am passionate about learning new technologies and acquiring new skills.</p>
+    
+    <div class="container">
+        <img src="codentra.jpg" alt="Certificate Image">
+        <p>This Python certificate is awarded for the successful completion of a Python programming course. It serves as official recognition of my knowledge and proficiency in the Python programming language. Python certificates can be obtained from <b>Codentra</b> and other online learning platforms.</p>
+    </div>
+
+    <div class="container">
+        <img src="dron.jpg" alt="Certificate Image">
+        <p>A drone workshop certificate is awarded for completing a drone workshop. This certificate serves as official recognition of my knowledge and skills related to drone technology and operation. Drone workshops are typically organized by <b>Sri Vignan Technologies</b>.</p>
+    </div>
+
+    <div class="container">
+        <img src="FPGA DESIGN AND VERIFICATION.jpg" alt="Certificate Image">
+        <p>This certificate presents the details of my internship in the field of FPGA design and verification within the VLSI domain. The internship was carried out at a prominent semiconductor company, where I was exposed to the complete lifecycle of FPGA-based projects. It provides insights into the projects I worked on, the methodologies used, and the skills acquired during the internship.</p>
+    </div>
+
     <a href="aboutme.html">Back</a>
     <center><a href="contactform.html">Next</a></center>
 </body>
